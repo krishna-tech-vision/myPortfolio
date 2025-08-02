@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="./asset/logo.png" type="image/x-icon">
+
+    <!-- Icon Links  -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <!--  ============== Nav bar ================== -->
+        <nav class="navbar">
+            <div class="logo-name">
+                <h2>Krishna</h2>
+            </div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <button id="menu-btn" onclick="openMenu()"><i class='bx bx-menu'></i></button>
+        </nav>
+         
+        <!--  Menu info -->
+          <div class="menu">
+            <button id="close-menu-btn" onclick="coloseMenu()"><i class='bx bx-x'></i></button>
+            <header>
+                <h3>Krishnananda Munda</h3>
+            </header>
+            <hr>
+            <div class="menu-links">
+                <a href="/index.html">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <!-- Dimm background and close menu when user click on outside menu -->
+          <div class="overlay" onclick="closeEffect()">Hello</div>
+        <!--  ==================== Hero Section =================== -->
+        <section class="hero-section">
+            <div class="user-intro">
+                <div id="owner-img"></div>
+                <h2>Welcome to My Portfolio</h2>
+                <p>I am passionate web developer with exprecience in creating engaging and functional website using
+                    medern technology.</p>
+                <button id="hire-btn">Hire me</button>
+            </div>
+        </section>
+
+        <!--  ========================= Project section ==================== -->
+        <section class="project-section">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div id="project-info">
+                    <div id="p-one-logo"></div>
+                    <h4>Project One</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hello, I am a web developer</p>
+                </div>
+
+                <div id="project-info">
+                    <div id="p-two-logo"></div>
+                    <h4>Project two</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hello, I am a web developer</p>
+                </div>
+
+                <div id="project-info">
+                    <div id="p-three-logo"></div>
+                    <h4>Project three</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hello, I am a web developer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================ About section =============== -->
+        <section class="about-section">
+            <h2>About me</h2>
+            <div class="skill-info">
+                <p>I am enthusiastic about web development and technology. Over the years, I have honed my skills in
+                    creating dynamic and responsive website that cater to various user needs. My expertise lies in
+                    following technologies:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- =========== Contact section ========== -->
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form>
+                <label><input type="text" placeholder="Enter your name" required></label>
+                <label><input type="email" placeholder="Enter your email" required></label>
+                <textarea name="message" , rows="5" cols="20">Message</textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer class="footer-section">
+            <div class="user-info">
+                <h4>Krishnananda Munda. </h4><p> &nbsp;All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

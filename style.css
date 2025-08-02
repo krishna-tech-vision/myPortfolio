@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(230, 229, 229);
+    overflow-x: hidden;
+}
+
+.container p {
+    font-size: 15px;
+}
+ 
+/*  ========================== Nav bar ========================== */
+.navbar {
+    background-color: rgb(18, 18, 18);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-name h2 {
+    color: rgb(238, 237, 237);
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-links {
+    display: flex;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.nav-links a {
+   padding: 10px;
+   text-decoration: none;
+   font-size: 1.1rem;
+   color: rgb(238, 237, 237);
+   transition: all .3s;
+}
+
+.nav-links a:hover {
+   background-color: rgb(13, 39, 156);
+}
+
+/*  menue button */
+#menu-btn {
+    padding: 0px 2px;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn i {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*  Menu info */
+.menu {
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: -330px;
+    background-color: rgb(18, 18, 18);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    display: none;
+    transition: all .4s ease-out;
+}
+
+.menu.show-menu {
+    margin-right: 0px;
+}
+
+
+.menu #close-menu-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2px 6px 2px 2px;
+    border-bottom-right-radius: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.menu #close-menu-btn i {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    pointer-events: none;
+}
+
+.menu hr {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.menu .menu-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.menu .menu-links a {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .4s ease-in;
+    margin-top: 2px;
+}
+
+.menu .menu-links a:hover {
+    background-color: rgb(164, 17, 187);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 49;
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* ======================= Hero section ====================== */
+.hero-section {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(246, 248, 249);
+    display: flex;
+    justify-content: center;
+}
+
+.user-intro {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section #owner-img {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+    background-image: url(./asset/krishna.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#hire-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0, 116, 187);
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#hire-btn:hover {
+    background-color: rgb(0, 71, 116);
+}
+
+/*  ======================= Project section =======================    */
+
+.project-section {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects #project-info {
+    width: 380px;
+    background-color: rgb(246, 248, 249);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+    transition: transform .3s ease;
+}
+
+.projects #project-info:hover {
+    transform: scale(1.02);
+}
+
+#project-info div {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#project-info #p-one-logo {
+    background-image: url(./asset/project.one.jpeg);
+}
+
+#project-info #p-two-logo {
+    background-image: url(./asset/project.two.png);
+}
+
+#project-info #p-three-logo {
+    background-image: url(./asset/project.three.jpeg);
+}
+
+/* ================ About section =============== */
+
+.about-section {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(246, 248, 249);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-info {
+    width: 80%;
+}
+
+.skill-info ul {
+    margin-left: 40px;
+    list-style: none;
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+/*  =============== Contact section =============== */
+
+.contact-section {
+     width: 100%;
+    height: 350px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-section form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-section form label{
+     width: 100%;  
+     border-radius: 5px;
+     background-color: red;
+}
+
+.contact-section form label input {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    border-radius: 5px;
+}
+
+.contact-section form label input::placeholder { color: #fff;}
+
+.contact-section form textarea {
+    width: 100%; 
+    height: 65px;
+    padding: 5px;
+    background: rgb(24, 24, 24);
+    outline: none;
+    color: white;
+    resize: none;
+    border-radius: 5px;
+}
+
+.contact-section form textarea::placeholder { color: #fff }
+
+.contact-section form button {
+    width: 80px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(179, 0, 207);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-align: center;
+    align-self: center;
+    transition: all .3s ease;
+}
+
+.contact-section form button:hover {
+    background: linear-gradient(to bottom, rgb(179, 0, 207), rgb(62, 62, 212));
+    border: none;
+}
+
+/*  ====================== Footer Section =================================  */
+
+.footer-section {
+   width: 100%;
+   height: 50px;;
+   background-color: rgb(28, 27, 27);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-section div {
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.footer-section div p {
+    font-size: 14px;
+}

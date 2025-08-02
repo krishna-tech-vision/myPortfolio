@@ -1,0 +1,71 @@
+@media (max-width: 850px) {
+    .projects #project-info {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 300px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .contact-section form {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .menu {
+        width: 240px;
+    }
+
+    .projects #project-info {
+        width: 370px;
+    }
+
+    #project-info div {
+        height: 130px;;
+    }
+
+    .footer-section div h4 {
+        font-size: 14px;
+    }
+
+    .footer-section div p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    body p {
+        font-size: 15px;
+    }
+
+     .menu {
+        width: 210px;
+    }
+
+    .projects #project-info {
+        width: 280px;
+    }
+
+    .contact-section form {
+        width: 70%;
+    }
+
+    .contact-section form textarea {
+        height: 45px;
+    }
+}
